@@ -1,3 +1,2 @@
-﻿  application.cpp
-D:\Documenten\Projects\Game_Engine\Starrize\Sandbox\application.cpp(8,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  SandboxApp.cpp
   Sandbox.vcxproj -> D:\Documenten\Projects\Game_Engine\Starrize\bin\-x64\Sandbox\Sandbox.exe
