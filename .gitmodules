@@ -1,0 +1,3 @@
+[submodule "Starrize/vendor/spdlog"]
+	path = Starrize/vendor/spdlog
+	url = https://github.com/gabime/spdlog
