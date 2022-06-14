@@ -4,6 +4,9 @@
     <Filter Include="Starrize">
       <UniqueIdentifier>{D97602E1-C543-5DEC-EE5C-4B94DA88927A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Starrize\Events">
+      <UniqueIdentifier>{b7607671-89f9-451d-a7fe-a4d8b8e4a749}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Starrize.h" />
@@ -18,6 +21,12 @@
     </ClInclude>
     <ClInclude Include="src\Starrize\Log.h">
       <Filter>Starrize</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>Starrize\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEvent.h">
+      <Filter>Starrize\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

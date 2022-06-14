@@ -143,6 +143,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="event.h" />
+    <ClInclude Include="KeyEvent.h" />
     <ClInclude Include="src\Starrize.h" />
     <ClInclude Include="src\Starrize\Application.h" />
     <ClInclude Include="src\Starrize\Core.h" />
