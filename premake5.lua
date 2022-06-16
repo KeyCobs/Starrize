@@ -26,6 +26,7 @@ project "Starrize"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -37,7 +38,8 @@ project "Starrize"
 		defines
 		{
 			"SR_PLATFORM_WINDOWS",
-			"SR_BUILD_DLL"
+			"SR_BUILD_DLL",
+
 		}
 
 		postbuildcommands

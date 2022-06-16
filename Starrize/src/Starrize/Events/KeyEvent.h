@@ -1,6 +1,6 @@
 #pragma once
 
-#include "event.h"
+#include "Event.h"
 
 #include <sstream>
 
@@ -11,7 +11,7 @@ namespace Starrize
 		public:
 			inline int GetKeyCode() const { return m_KeyCode; }
 
-		EVENT_CLASS_CATERGORY(EventCategoryKeyBoard || EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryKeyBoard | EventCategoryInput)
 	protected:
 		KeyEvent(int keycode)
 			: m_KeyCode(keycode) {}
@@ -21,7 +21,8 @@ namespace Starrize
 
 	class STARRIZE_API KeyPressedEvent : public KeyEvent
 	{
-		public KeyPressedEvent(int keycode, int repeatCount)
+	public:
+		KeyPressedEvent(int keycode, int repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
 		inline int getRepeatCount() const { return m_RepeatCount; }
@@ -51,6 +52,6 @@ namespace Starrize
 			return ss.str();
 		}
 
-		EVENT_CLASS_CATERGORY(KeyReleased)
+		EVENT_CLASS_TYPE(KeyReleased)
 	};
 }

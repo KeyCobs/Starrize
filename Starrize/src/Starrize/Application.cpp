@@ -1,5 +1,8 @@
 #include "Application.h"
 
+#include "Starrize/Events/ApplicationEvent.h"
+#include "Starrize/Log.h"
+
 namespace Starrize
 {
 	Application::Application()
@@ -14,6 +17,8 @@ namespace Starrize
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		SR_TRACE(e);
 		while (true);
 	}
 

@@ -5,7 +5,7 @@
       <UniqueIdentifier>{D97602E1-C543-5DEC-EE5C-4B94DA88927A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Starrize\Events">
-      <UniqueIdentifier>{b7607671-89f9-451d-a7fe-a4d8b8e4a749}</UniqueIdentifier>
+      <UniqueIdentifier>{9DD424D2-0960-9296-1271-158B7E7BEE96}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,14 +19,20 @@
     <ClInclude Include="src\Starrize\EntryPoint.h">
       <Filter>Starrize</Filter>
     </ClInclude>
+    <ClInclude Include="src\Starrize\Events\ApplicationEvent.h">
+      <Filter>Starrize\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Starrize\Events\Event.h">
+      <Filter>Starrize\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Starrize\Events\KeyEvent.h">
+      <Filter>Starrize\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Starrize\Events\MouseEvent.h">
+      <Filter>Starrize\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Starrize\Log.h">
       <Filter>Starrize</Filter>
-    </ClInclude>
-    <ClInclude Include="event.h">
-      <Filter>Starrize\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>Starrize\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

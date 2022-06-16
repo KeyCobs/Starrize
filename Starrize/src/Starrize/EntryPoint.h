@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Application.h"
+
 #ifdef SR_PLATFORM_WINDOWS
 
 extern Starrize::Application* Starrize::CreateApplication();

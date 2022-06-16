@@ -1,5 +1,5 @@
 #pragma once
-#include "src/Starrize/Core.h"
+#include "../Core.h"
 
 #include <string>
 #include <functional>
@@ -33,7 +33,7 @@ namespace Starrize
 		None = 0,
 		EventCategoryApplication	= BIT(0),
 		EventCategoryInput			= BIT(1),
-		EventCCategoryKeyboard		= BIT(2),
+		EventCategoryKeyboard		= BIT(2),
 		EventCategoryMouse			= BIT(3),
 		EventCategoryMouseButton	= BIT(4)
 
@@ -43,7 +43,7 @@ namespace Starrize
 								virtual EventType GetEventType() const override {return GetStaticType();}\
 								virtual const char* GetName() const override {return #type;}
 
-#define EVENT_CLASS_CATERGORY(category) virtual int GetCategoryFlags() const override{return category;}
+#define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override{return category;}
 
 	class STARRIZE_API Event
 	{
@@ -83,6 +83,11 @@ namespace Starrize
 			return false;
 		}
 	private:
-		Event& m_Event
+		Event& m_Event;
 	};
+
+	inline std::ostream& operator <(std::ostream& os, const Event& e)
+	{
+		return os << e.ToString();
+	}
 }
